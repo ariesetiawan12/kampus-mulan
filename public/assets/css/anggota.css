@@ -1,0 +1,931 @@
+/* =========================================================
+   DATA ANGGOTA
+   FINAL VERSION
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.anggota-page {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    padding-bottom: 30px;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.anggota-page .page-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin-bottom: 22px;
+}
+
+
+.anggota-page .page-header h2 {
+    margin: 0 0 5px 0;
+
+    color: #212529;
+
+    font-weight: 700;
+}
+
+
+.anggota-page .page-header p {
+    margin: 0;
+
+    color: #6c757d;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   HEADER BUTTON
+========================================================= */
+
+.anggota-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+
+.anggota-header-actions .btn {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.anggota-alert {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   STATISTIK
+========================================================= */
+
+.anggota-statistik {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   DASHBOARD CARD
+========================================================= */
+
+.anggota-page .dashboard-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 120px;
+
+    max-height: none !important;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    color: #fff;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+
+.anggota-page .dashboard-card h6 {
+    margin: 0 0 8px 0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    opacity: 0.9;
+}
+
+
+.anggota-page .dashboard-card h2 {
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+.anggota-page .dashboard-card > i {
+    font-size: 45px;
+
+    opacity: 0.35;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.anggota-card {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    overflow: visible !important;
+
+    flex: none !important;
+}
+
+
+.anggota-card-body {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    padding: 16px;
+
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.anggota-search-form {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin: 0 0 15px 0;
+}
+
+
+.anggota-search-form .input-group {
+    width: 100%;
+
+    height: 40px;
+
+    margin: 0 !important;
+}
+
+
+.anggota-search-form .form-control {
+    height: 40px;
+
+    border-radius: 7px 0 0 7px;
+
+    font-size: 14px;
+}
+
+
+.anggota-search-form .btn {
+    height: 40px;
+
+    min-width: 44px;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.anggota-table-wrapper {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: auto;
+
+    overflow-y: visible;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.anggota-table {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    margin: 0 !important;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.anggota-table thead {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+.anggota-table thead tr {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+.anggota-table thead th {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    padding: 10px 8px;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+
+    color: #212529;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.anggota-table tbody {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+.anggota-table tbody tr {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.anggota-table tbody tr:hover {
+    background-color: #f8f9fa;
+
+    transform: translateY(-1px);
+}
+
+
+.anggota-table tbody td {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    padding: 9px 8px;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid #e9ecef;
+}
+
+
+/* =========================================================
+   KODE
+========================================================= */
+
+.anggota-table .badge.bg-primary {
+    padding: 6px 9px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.anggota-page .badge {
+    white-space: nowrap;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.anggota-action {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 4px;
+
+    white-space: nowrap;
+}
+
+
+.anggota-action form {
+    display: inline-flex;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.anggota-action .btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 34px;
+
+    height: 34px;
+
+    padding: 0;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   EMPTY DATA
+========================================================= */
+
+.anggota-empty {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    padding: 45px 20px !important;
+
+    color: #6c757d;
+}
+
+
+.anggota-empty i {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 40px;
+}
+
+
+.anggota-empty h6 {
+    margin-bottom: 5px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.anggota-empty p {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.anggota-pagination {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    margin-top: 15px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #edf0f3;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   PAGINATION INFO
+========================================================= */
+
+.pagination-info {
+    color: #6c757d;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+.pagination-info strong {
+    color: #343a40;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PAGINATION LIST
+========================================================= */
+
+.anggota-pagination-list {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAGINATION BUTTON
+========================================================= */
+
+.anggota-pagination-list li {
+    display: block;
+
+    width: auto;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.anggota-pagination-list li a,
+.anggota-pagination-list li span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 36px;
+
+    height: 36px;
+
+    padding: 0;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 9px;
+
+    background: #fff;
+
+    color: #495057;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition:
+        all 0.2s ease;
+}
+
+
+/* =========================================================
+   PAGINATION HOVER
+========================================================= */
+
+.anggota-pagination-list li a:hover {
+    background: #f0f5ff;
+
+    border-color: #0d6efd;
+
+    color: #0d6efd;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 3px 8px rgba(13, 110, 253, 0.10);
+}
+
+
+/* =========================================================
+   PAGINATION ACTIVE
+========================================================= */
+
+.anggota-pagination-list li.active span {
+    background: #0d6efd;
+
+    border-color: #0d6efd;
+
+    color: #fff;
+
+    box-shadow:
+        0 3px 8px rgba(13, 110, 253, 0.22);
+}
+
+
+/* =========================================================
+   PAGINATION DISABLED
+========================================================= */
+
+.anggota-pagination-list li.disabled span {
+    background: #f8f9fa;
+
+    border-color: #e9ecef;
+
+    color: #adb5bd;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   PAGINATION ICON
+========================================================= */
+
+.anggota-pagination-list i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FIX GLOBAL CARD
+========================================================= */
+
+.anggota-page .card {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+}
+
+
+.anggota-page .card-body {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+}
+
+
+/* =========================================================
+   FIX GLOBAL TABLE
+========================================================= */
+
+.anggota-page table {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+}
+
+
+.anggota-page tbody,
+.anggota-page thead,
+.anggota-page tr {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+/* =========================================================
+   FIX TABLE RESPONSIVE
+========================================================= */
+
+.anggota-page .table-responsive {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+}
+
+
+/* =========================================================
+   FIX PAGINATION GLOBAL
+========================================================= */
+
+.anggota-page .anggota-pagination nav {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+.anggota-page .anggota-pagination ul {
+    height: auto !important;
+
+    min-height: 0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .anggota-table {
+        min-width: 950px;
+    }
+
+    .anggota-table-wrapper {
+        overflow-x: auto;
+
+        overflow-y: visible;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .anggota-page .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .anggota-header-actions {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+
+    .anggota-header-actions .btn {
+        flex: 1;
+    }
+
+
+    .anggota-header-actions .btn-group {
+        flex: 1;
+    }
+
+
+    .anggota-header-actions .btn-group .btn {
+        width: 100%;
+    }
+
+
+    .anggota-page .dashboard-card {
+        min-height: 105px;
+
+        padding: 18px;
+    }
+
+
+    .anggota-page .dashboard-card h2 {
+        font-size: 28px;
+    }
+
+
+    .anggota-page .dashboard-card > i {
+        font-size: 38px;
+    }
+
+
+    .anggota-card-body {
+        padding: 12px;
+    }
+
+
+    .anggota-pagination {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   HP
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .anggota-page .page-header h2 {
+        font-size: 22px;
+    }
+
+
+    .anggota-page .page-header p {
+        font-size: 13px;
+    }
+
+
+    .anggota-header-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .anggota-header-actions > .btn,
+    .anggota-header-actions > .btn-group {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .anggota-page .dashboard-card {
+        min-height: 95px;
+
+        padding: 16px;
+    }
+
+
+    .anggota-page .dashboard-card h6 {
+        font-size: 13px;
+    }
+
+
+    .anggota-page .dashboard-card h2 {
+        font-size: 25px;
+    }
+
+
+    .anggota-page .dashboard-card > i {
+        font-size: 32px;
+    }
+
+
+    .anggota-table {
+        min-width: 900px;
+    }
+
+
+    .anggota-table thead th,
+    .anggota-table tbody td {
+        padding: 8px 6px;
+
+        font-size: 12px;
+    }
+
+
+    .anggota-action .btn {
+        width: 32px;
+
+        height: 32px;
+    }
+
+
+    .pagination-info {
+        font-size: 12px;
+    }
+
+
+    .anggota-pagination-list li a,
+    .anggota-pagination-list li span {
+        width: 34px;
+
+        height: 34px;
+    }
+
+}

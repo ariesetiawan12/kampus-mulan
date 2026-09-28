@@ -1,0 +1,474 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 30px;
+
+    background: #eef2f7;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #222;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.print-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,.08);
+
+}
+
+
+/* =========================================================
+   KOP
+========================================================= */
+
+.kop-surat {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    text-align: center;
+
+}
+
+
+.logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+}
+
+
+.kop-text h1 {
+
+    margin: 0;
+
+    color: #173B6C;
+
+    font-size: 22px;
+
+}
+
+
+.kop-text h2 {
+
+    margin: 4px 0;
+
+    color: #222;
+
+    font-size: 17px;
+
+}
+
+
+.kop-text p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+
+}
+
+
+.garis {
+
+    height: 3px;
+
+    margin-top: 15px;
+
+    margin-bottom: 25px;
+
+    background: #173B6C;
+
+}
+
+
+/* =========================================================
+   JUDUL
+========================================================= */
+
+.judul-laporan {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.judul-laporan h3 {
+
+    margin: 0 0 5px;
+
+    color: #173B6C;
+
+    font-size: 17px;
+
+}
+
+
+.judul-laporan p {
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+thead th {
+
+    padding: 9px 7px;
+
+    background: #173B6C;
+
+    color: white;
+
+    border: 1px solid #173B6C;
+
+    font-size: 10px;
+
+    text-align: center;
+
+}
+
+
+tbody td {
+
+    padding: 8px 7px;
+
+    border: 1px solid #d8dee7;
+
+    font-size: 10px;
+
+    vertical-align: top;
+
+}
+
+
+tbody tr:nth-child(even) {
+
+    background: #f7f9fc;
+
+}
+
+
+.center {
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 4px 7px;
+
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.status.dipinjam {
+
+    background: #dceaff;
+
+    color: #1769e0;
+
+}
+
+
+.status.terlambat {
+
+    background: #ffe1e5;
+
+    color: #dc3545;
+
+}
+
+
+.status.kembali {
+
+    background: #dcf5e8;
+
+    color: #198754;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty {
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #888;
+
+}
+
+
+/* =========================================================
+   RINGKASAN
+========================================================= */
+
+.ringkasan {
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    text-align: right;
+
+    color: #173B6C;
+
+    border-top:
+        1px solid #d8dee7;
+
+}
+
+
+/* =========================================================
+   TANDA TANGAN
+========================================================= */
+
+.ttd {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 40px;
+
+    text-align: center;
+
+}
+
+
+.ttd p {
+
+    margin: 4px 0;
+
+}
+
+
+.space {
+
+    height: 55px;
+
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.toolbar {
+
+    margin-top: 35px;
+
+    text-align: center;
+
+}
+
+
+.toolbar button {
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+
+.btn-print {
+
+    background: #173B6C;
+
+}
+
+
+.btn-close {
+
+    margin-left: 5px;
+
+    background: #6c757d;
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    @page {
+
+        size: A4 landscape;
+
+        margin: 10mm;
+
+    }
+
+
+    * {
+
+        -webkit-print-color-adjust:
+            exact !important;
+
+        print-color-adjust:
+            exact !important;
+
+    }
+
+
+    body {
+
+        padding: 0;
+
+        background: white !important;
+
+    }
+
+
+    .print-container {
+
+        width: 100%;
+
+        max-width: none;
+
+        padding: 0;
+
+        box-shadow: none;
+
+    }
+
+
+    .toolbar {
+
+        display: none !important;
+
+    }
+
+
+    .kop-surat {
+
+        break-inside: avoid;
+
+    }
+
+
+    table {
+
+        page-break-inside: auto;
+
+    }
+
+
+    tr {
+
+        page-break-inside: avoid;
+
+        page-break-after: auto;
+
+    }
+
+
+    thead {
+
+        display: table-header-group;
+
+    }
+
+
+    .ringkasan {
+
+        break-inside: avoid;
+
+    }
+
+
+    .ttd {
+
+        break-inside: avoid;
+
+    }
+
+}

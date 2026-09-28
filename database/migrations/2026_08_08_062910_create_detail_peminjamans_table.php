@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('detail_peminjamans', function (Blueprint $table) {
+
+            $table->id();
+
+            // Relasi ke transaksi peminjaman
+            $table->foreignId('peminjaman_id')
+                ->constrained('peminjamans')
+                ->cascadeOnDelete();
+
+            // Buku yang dipinjam
+            $table->foreignId('buku_id')
+                ->constrained('bukus')
+                ->restrictOnDelete();
+
+            // Status buku
+            $table->enum('status', [
+                'Dipinjam',
+                'Dikembalikan'
+            ])->default('Dipinjam');
+
+            $table->timestamps();
+
+            // Satu buku tidak boleh
+            // masuk dua kali dalam transaksi yang sama
+            $table->unique([
+                'peminjaman_id',
+                'buku_id'
+            ]);
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('detail_peminjamans');
+    }
+};

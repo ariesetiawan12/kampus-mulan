@@ -1,0 +1,356 @@
+/* =========================================================
+   PENGATURAN ADMIN
+========================================================= */
+
+.pengaturan-page {
+    padding-bottom: 30px;
+}
+
+
+/* HEADER */
+
+.pengaturan-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.pengaturan-header h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+.pengaturan-header h2 i {
+    color: #173b6c;
+}
+
+.pengaturan-header p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* STATISTIK */
+
+.admin-stat-card {
+    min-height: 120px;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: white;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, .08);
+}
+
+.admin-stat-card span {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    opacity: .9;
+}
+
+.admin-stat-card strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+.admin-stat-card > i {
+    font-size: 45px;
+
+    opacity: .25;
+}
+
+.admin-stat-card.primary {
+    background: #1769e0;
+}
+
+.admin-stat-card.success {
+    background: #198754;
+}
+
+.admin-stat-card.warning {
+    background: #e6a700;
+}
+
+
+/* TABLE */
+
+.admin-table-card {
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 25px rgba(0, 0, 0, .08);
+}
+
+.admin-table-card .card-body {
+    padding: 22px;
+}
+
+.admin-table-card table {
+    margin-bottom: 0;
+}
+
+.admin-table-card thead th {
+    color: #172033;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #dee2e6;
+}
+
+.admin-table-card tbody td {
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+
+/* ADMIN USER */
+
+.admin-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.admin-user img,
+.admin-avatar {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.admin-avatar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f0fb;
+
+    color: #173b6c;
+
+    font-size: 21px;
+}
+
+.admin-user strong {
+    display: block;
+
+    color: #172033;
+}
+
+.admin-user small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #8a94a6;
+}
+
+
+/* USERNAME */
+
+.username-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    background: #edf4ff;
+
+    color: #1769e0;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* STATUS */
+
+.status-admin {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    background: #e5f7ed;
+
+    color: #198754;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.status-admin i {
+    font-size: 7px;
+}
+
+
+/* MODAL */
+
+.admin-modal {
+    overflow: hidden;
+
+    border: none;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, .2);
+}
+
+.admin-modal .modal-header {
+    padding: 18px 22px;
+
+    background: #173b6c;
+
+    color: white;
+
+    border: none;
+}
+
+.admin-modal .modal-title {
+    font-weight: 700;
+}
+
+.admin-modal .modal-header small {
+    display: block;
+
+    margin-top: 2px;
+
+    opacity: .75;
+}
+
+.admin-modal .modal-body {
+    padding: 25px;
+}
+
+
+/* PHOTO */
+
+.admin-photo-preview {
+    width: 150px;
+
+    height: 150px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #f0f3f7;
+
+    border: 4px solid #e7edf5;
+}
+
+.admin-photo-preview img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* INFO */
+
+.admin-info-box {
+    display: flex;
+
+    gap: 9px;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: #edf4ff;
+
+    color: #365477;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.admin-info-box i {
+    color: #1769e0;
+
+    font-size: 16px;
+}
+
+
+/* BUTTON */
+
+.admin-table-card .btn-sm {
+    margin-right: 3px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .pengaturan-header {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+    .pengaturan-header h2 {
+        font-size: 23px;
+    }
+
+}

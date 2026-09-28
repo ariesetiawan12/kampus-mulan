@@ -1,0 +1,777 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.tentang-page {
+    padding-bottom: 30px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.tentang-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 250px;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #173B6C,
+            #2F6EB8
+        );
+
+    box-shadow:
+        0 8px 28px rgba(23, 59, 108, .16);
+}
+
+
+.tentang-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    max-width: 850px;
+}
+
+
+.tentang-logo {
+    width: 105px;
+
+    height: 105px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255,255,255,.14);
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    backdrop-filter: blur(5px);
+}
+
+
+.tentang-logo img {
+    width: 78px;
+
+    height: 78px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 50%;
+
+    padding: 5px;
+}
+
+
+.tentang-label {
+    display: inline-block;
+
+    margin-bottom: 7px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,.12);
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 700;
+}
+
+
+.tentang-hero h1 {
+    margin: 0;
+
+    font-size: 34px;
+
+    font-weight: 700;
+}
+
+
+.tentang-hero h2 {
+    margin: 5px 0 12px;
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    opacity: .9;
+}
+
+
+.tentang-hero p {
+    max-width: 700px;
+
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    opacity: .86;
+}
+
+
+.tentang-hero-decoration {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.07);
+}
+
+
+.decoration-one {
+    width: 280px;
+
+    height: 280px;
+
+    right: -80px;
+
+    top: -110px;
+}
+
+
+.decoration-two {
+    width: 160px;
+
+    height: 160px;
+
+    right: 180px;
+
+    bottom: -100px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.tentang-card {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.06);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.tentang-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.09);
+}
+
+
+.tentang-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 20px;
+
+    border-bottom:
+        1px solid #edf0f4;
+}
+
+
+.tentang-card-header h5 {
+    margin: 0;
+
+    color: #173B6C;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.tentang-card-header p {
+    margin: 3px 0 0;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+.tentang-card-body {
+    padding: 22px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+.tentang-card-body strong {
+    color: #173B6C;
+}
+
+
+.tentang-icon {
+    width: 44px;
+
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 19px;
+}
+
+
+.tentang-icon.blue {
+    background: #e8f1ff;
+
+    color: #1769e0;
+}
+
+
+.tentang-icon.green {
+    background: #e7f7ef;
+
+    color: #198754;
+}
+
+
+.tentang-icon.yellow {
+    background: #fff5d8;
+
+    color: #d69e00;
+}
+
+
+.tentang-icon.red {
+    background: #ffe9ed;
+
+    color: #dc3545;
+}
+
+
+.tentang-icon.purple {
+    background: #f0eaff;
+
+    color: #6f42c1;
+}
+
+
+/* =========================================================
+   VERSION
+========================================================= */
+
+.version-card {
+    padding: 28px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.version-icon {
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #eaf2ff;
+
+    color: #173B6C;
+
+    font-size: 25px;
+}
+
+
+.version-card > span {
+    color: #888;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+
+
+.version-card > strong {
+    margin-top: 3px;
+
+    color: #173B6C;
+
+    font-size: 35px;
+
+    line-height: 1;
+}
+
+
+.version-card > small {
+    margin-top: 7px;
+
+    color: #777;
+}
+
+
+.version-line {
+    width: 75%;
+
+    height: 1px;
+
+    margin: 22px 0;
+
+    background: #edf0f4;
+}
+
+
+.version-info {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+}
+
+
+.version-info div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.version-info span {
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+.version-info strong {
+    color: #333;
+
+    font-size: 12px;
+}
+
+
+.status-online {
+    color: #198754 !important;
+}
+
+
+.status-online i {
+    font-size: 7px;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.tentang-section-title {
+    margin: 35px 0 18px;
+}
+
+
+.tentang-section-title span {
+    color: #2F6EB8;
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 700;
+}
+
+
+.tentang-section-title h3 {
+    margin: 4px 0 0;
+
+    color: #173B6C;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FITUR
+========================================================= */
+
+.fitur-card {
+    height: 100%;
+
+    padding: 22px;
+
+    background: white;
+
+    border:
+        1px solid #edf0f4;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.05);
+
+    transition: .25s;
+}
+
+
+.fitur-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+
+.fitur-icon {
+    width: 45px;
+
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 19px;
+}
+
+
+.fitur-icon.blue {
+    background: #e8f1ff;
+
+    color: #1769e0;
+}
+
+
+.fitur-icon.green {
+    background: #e7f7ef;
+
+    color: #198754;
+}
+
+
+.fitur-icon.yellow {
+    background: #fff5d8;
+
+    color: #d69e00;
+}
+
+
+.fitur-icon.red {
+    background: #ffe9ed;
+
+    color: #dc3545;
+}
+
+
+.fitur-card h5 {
+    margin-bottom: 7px;
+
+    color: #173B6C;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.fitur-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TEKNOLOGI
+========================================================= */
+
+.tech-list {
+    padding: 8px 20px 20px;
+}
+
+
+.tech-item {
+    padding: 13px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid #edf0f4;
+}
+
+
+.tech-item:last-child {
+    border-bottom: none;
+}
+
+
+.tech-item span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.tech-item span i {
+    color: #173B6C;
+
+    font-size: 16px;
+}
+
+
+.tech-item small {
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.quote-card {
+    min-height: 100%;
+
+    padding: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7faff,
+            #eef5ff
+        );
+}
+
+
+.quote-mark {
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #173B6C;
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+.quote-content h5 {
+    margin-bottom: 7px;
+
+    color: #173B6C;
+
+    font-size: 17px;
+}
+
+
+.quote-content p {
+    margin-bottom: 10px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+}
+
+
+.quote-content span {
+    color: #8a94a6;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.tentang-footer {
+    margin-top: 30px;
+
+    padding-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top:
+        1px solid #e8edf3;
+
+    color: #8a94a6;
+
+    font-size: 11px;
+}
+
+
+.tentang-footer div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.tentang-footer i {
+    color: #198754;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .tentang-hero {
+        padding: 25px;
+    }
+
+    .tentang-hero-content {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .tentang-hero h1 {
+        font-size: 27px;
+    }
+
+    .tentang-hero h2 {
+        font-size: 17px;
+    }
+
+    .tentang-footer {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}

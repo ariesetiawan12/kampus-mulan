@@ -1,0 +1,236 @@
+/* ==========================================
+   BACKUP DATABASE
+========================================== */
+
+.backup-page {
+    padding-bottom: 40px;
+}
+
+
+/* ==========================================
+   BACKUP CARD
+========================================== */
+
+.backup-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+    border: 1px solid #edf0f5;
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.backup-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #173b6c,
+        #2563a6
+    );
+
+    color: #ffffff;
+
+    font-size: 40px;
+
+    box-shadow:
+        0 12px 25px rgba(23, 59, 108, 0.25);
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.backup-card h4 {
+    font-weight: 700;
+    color: #173b6c;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.backup-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+
+    color: #6c757d;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   INFO
+========================================== */
+
+.backup-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+
+.info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    text-align: left;
+
+    background: #f8fafc;
+
+    border-radius: 14px;
+
+    border: 1px solid #edf0f5;
+}
+
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #e9f1fb;
+
+    color: #173b6c;
+
+    font-size: 20px;
+}
+
+
+.info-item span {
+    display: block;
+
+    color: #8a94a6;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+
+.info-item strong {
+    display: block;
+
+    color: #27364b;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   ACTION
+========================================== */
+
+.backup-action {
+    margin-bottom: 20px;
+}
+
+
+#btnBackup {
+    min-width: 230px;
+
+    padding: 13px 25px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px rgba(23, 59, 108, 0.18);
+}
+
+
+#btnBackup i {
+    margin-right: 7px;
+}
+
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.backup-note {
+    color: #7b8794;
+
+    font-size: 13px;
+}
+
+
+.backup-note i {
+    margin-right: 4px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .backup-card {
+        padding: 30px 20px;
+    }
+
+
+    .backup-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    #btnBackup {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .backup-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 32px;
+    }
+
+
+    .backup-card h4 {
+        font-size: 20px;
+    }
+
+}

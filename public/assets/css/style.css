@@ -1,0 +1,1312 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main {
+
+    margin-left: 280px;
+
+    width: calc(100% - 280px);
+
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    transition: all .35s ease;
+
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 280px;
+
+    height: 100vh;
+
+    background: #173B6C;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: .35s;
+
+    overflow: hidden;
+
+    z-index: 1000;
+
+}
+
+
+.sidebar-header {
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+}
+
+
+.logo {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    object-fit: cover;
+
+    padding: 6px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.sidebar-header h3 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 0;
+
+}
+
+
+.sidebar-header p {
+
+    margin: 0;
+
+    color: #9fd4ff;
+
+}
+
+
+.sidebar-header small {
+
+    color: #d9d9d9;
+
+}
+
+
+.sidebar-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    min-height: 0;
+
+}
+
+
+.menu {
+
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding: 10px 15px;
+
+}
+
+
+.menu-label {
+
+    font-size: 12px;
+
+    color: #8fc7ff;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 15px;
+
+    border-radius: 10px;
+
+    transition: .3s;
+
+    margin-bottom: 5px;
+
+}
+
+
+.menu a i {
+
+    font-size: 18px;
+
+    min-width: 20px;
+
+    text-align: center;
+
+}
+
+
+.menu a:hover {
+
+    background: #2F6EB8;
+
+}
+
+
+.menu a.active {
+
+    background: #2F6EB8;
+
+}
+
+
+.menu::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+
+.menu::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+
+.menu::-webkit-scrollbar-thumb {
+
+    background: #4FC3F7;
+
+    border-radius: 10px;
+
+}
+
+
+.sidebar-footer {
+
+    padding: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.user-info i {
+
+    font-size: 40px;
+
+}
+
+
+.user-info small {
+
+    display: block;
+
+    color: #ccc;
+
+}
+
+
+.logout-btn {
+
+    width: 100%;
+
+    border: none;
+
+    background: #dc3545;
+
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    transition: .3s;
+
+    cursor: pointer;
+
+}
+
+
+.logout-btn:hover {
+
+    background: #b02a37;
+
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar-custom {
+
+    height: 75px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 900;
+
+}
+
+
+.navbar-left {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.navbar-left h4 {
+
+    margin: 0;
+
+    color: #173B6C;
+
+    font-weight: 700;
+
+}
+
+
+.navbar-left span {
+
+    font-size: 14px;
+
+    color: #777;
+
+}
+
+
+.navbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.datetime {
+
+    text-align: right;
+
+}
+
+
+#tanggal {
+
+    color: #173B6C;
+
+    font-weight: 600;
+
+}
+
+
+#jam {
+
+    color: #666;
+
+    font-size: 14px;
+
+}
+
+
+.profile-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: #f4f7fb;
+
+    padding: 8px 15px;
+
+    border-radius: 12px;
+
+}
+
+
+.profile-box i {
+
+    font-size: 38px;
+
+    color: #173B6C;
+
+}
+
+
+.profile-box strong {
+
+    display: block;
+
+}
+
+
+.profile-box small {
+
+    color: #777;
+
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.page-content {
+
+    padding: 30px;
+
+}
+
+
+/* =========================================================
+   DASHBOARD WELCOME
+========================================================= */
+
+/*
+|--------------------------------------------------------------------------
+| Dipakai oleh Blade dashboard kita:
+| <div class="welcome-section">
+|--------------------------------------------------------------------------
+*/
+
+.welcome-section,
+.welcome-banner {
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #173B6C,
+        #2F6EB8
+    );
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+    min-height: 190px;
+
+}
+
+
+/* Lingkaran dekorasi */
+
+.welcome-section::before,
+.welcome-banner::before {
+
+    content: "";
+
+    position: absolute;
+
+    right: -80px;
+
+    top: -80px;
+
+    width: 250px;
+
+    height: 250px;
+
+    background: rgba(255,255,255,.08);
+
+    border-radius: 50%;
+
+}
+
+
+/* Lingkaran kedua */
+
+.welcome-section::after,
+.welcome-banner::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 180px;
+
+    bottom: -120px;
+
+    width: 220px;
+
+    height: 220px;
+
+    background: rgba(255,255,255,.05);
+
+    border-radius: 50%;
+
+}
+
+
+.welcome-left {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.school-logo {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    padding: 5px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+}
+
+
+.welcome-left h2 {
+
+    margin: 0 0 5px;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: white;
+
+}
+
+
+.welcome-left h5 {
+
+    margin: 0 0 10px;
+
+    opacity: .9;
+
+    color: white;
+
+}
+
+
+.welcome-left p {
+
+    margin: 0 0 5px;
+
+    color: white;
+
+}
+
+
+.welcome-left small {
+
+    color: rgba(255,255,255,.9);
+
+}
+
+
+.welcome-right {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    flex-shrink: 0;
+
+}
+
+
+.banner-image {
+
+    width: 260px;
+
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   QUICK MENU
+========================================================= */
+
+.quick-menu {
+
+    height: 150px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #173B6C;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+
+}
+
+
+.quick-menu:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+
+    color: #2F6EB8;
+
+}
+
+
+.quick-menu i {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.quick-menu span {
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   DASHBOARD CARD
+========================================================= */
+
+.dashboard-card {
+
+    height: 150px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px;
+
+    color: white;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+
+}
+
+
+.dashboard-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+.dashboard-card h6 {
+
+    font-size: 16px;
+
+    margin: 0;
+
+}
+
+
+.dashboard-card h2 {
+
+    font-size: 42px;
+
+    margin: 10px 0;
+
+    font-weight: 700;
+
+}
+
+
+.dashboard-card small {
+
+    opacity: .8;
+
+}
+
+
+.dashboard-card i {
+
+    font-size: 55px;
+
+    opacity: .7;
+
+}
+
+
+/* =========================================================
+   BOOTSTRAP BACKGROUND COLOR OVERRIDE
+========================================================= */
+
+.dashboard-card.bg-primary {
+
+    background: #1769e0 !important;
+
+}
+
+
+.dashboard-card.bg-success {
+
+    background: #198754 !important;
+
+}
+
+
+.dashboard-card.bg-warning {
+
+    background: #ffbf0b !important;
+
+}
+
+
+.dashboard-card.bg-danger {
+
+    background: #dc3545 !important;
+
+}
+
+
+/* =========================================================
+   GENERAL CARD
+========================================================= */
+
+.card {
+
+    border: none;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.card-header {
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+    font-weight: 600;
+
+    padding: 18px 20px;
+
+}
+
+
+.card-body {
+
+    padding: 20px;
+
+}
+
+
+/* =========================================================
+   CHART
+========================================================= */
+
+#chartPinjam {
+
+    width: 100% !important;
+
+    max-height: 330px;
+
+}
+
+
+/* =========================================================
+   TOGGLE SIDEBAR
+========================================================= */
+
+.toggle-sidebar {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #173B6C;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    margin-right: 15px;
+
+}
+
+
+.toggle-sidebar:hover {
+
+    background: #29538B;
+
+}
+
+
+/* =========================================================
+   SIDEBAR COLLAPSE
+========================================================= */
+
+.sidebar.collapsed {
+
+    width: 85px;
+
+}
+
+
+.sidebar.collapsed .sidebar-header h3,
+.sidebar.collapsed .sidebar-header p,
+.sidebar.collapsed .sidebar-header small,
+.sidebar.collapsed .menu-label,
+.sidebar.collapsed .menu a span,
+.sidebar.collapsed .user-info div,
+.sidebar.collapsed .logout-btn {
+
+    display: none;
+
+}
+
+
+.sidebar.collapsed .menu a {
+
+    justify-content: center;
+
+}
+
+
+.sidebar.collapsed .menu a i {
+
+    margin: 0;
+
+    font-size: 22px;
+
+}
+
+
+.sidebar.collapsed .logo {
+
+    width: 55px;
+
+    height: 55px;
+
+}
+
+
+.main.collapsed {
+
+    margin-left: 85px;
+
+    width: calc(100% - 85px);
+
+}
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .sidebar {
+        width: 85px;
+    }
+
+    .sidebar .sidebar-header h3,
+    .sidebar .sidebar-header p,
+    .sidebar .sidebar-header small,
+    .sidebar .menu-label,
+    .sidebar .menu a span,
+    .sidebar .user-info div,
+    .sidebar .logout-btn {
+        display: none;
+    }
+
+    .sidebar .menu a {
+        justify-content: center;
+    }
+
+    .sidebar .menu a i {
+        font-size: 22px;
+    }
+
+    .sidebar .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .main {
+        margin-left: 85px;
+        width: calc(100% - 85px);
+    }
+
+    .welcome-section,
+    .welcome-banner {
+        padding: 25px;
+    }
+
+    .banner-image {
+        width: 220px;
+        height: 130px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ==============================
+       MAIN
+    ============================== */
+
+    .main,
+    .main.collapsed {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+/* =========================================================
+   MOBILE SIDEBAR FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Main full width di HP */
+    .main,
+    .main.collapsed {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Sidebar tertutup */
+    .sidebar,
+    .sidebar.collapsed {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 280px !important;
+        height: 100vh !important;
+
+        transform: translateX(-100%) !important;
+
+        transition: transform 0.3s ease !important;
+
+        z-index: 1100 !important;
+
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Sidebar TERBUKA */
+    .sidebar.show,
+    .sidebar.collapsed.show {
+        transform: translateX(0) !important;
+    }
+
+    /* Isi sidebar kembali normal */
+    .sidebar .sidebar-header h3,
+    .sidebar .sidebar-header p,
+    .sidebar .sidebar-header small,
+    .sidebar .menu-label,
+    .sidebar .menu a span,
+    .sidebar .user-info div,
+    .sidebar .logout-btn {
+        display: block !important;
+    }
+
+    .sidebar .menu a {
+        justify-content: flex-start !important;
+    }
+
+    /* Overlay */
+    .sidebar-overlay {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 100vh !important;
+
+        background: rgba(0, 0, 0, 0.45) !important;
+
+        opacity: 0 !important;
+        visibility: hidden !important;
+
+        transition: all 0.3s ease !important;
+
+        z-index: 1050 !important;
+    }
+
+    .sidebar-overlay.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+    /* ==============================
+       NAVBAR
+    ============================== */
+
+    .navbar-custom {
+        padding: 0 15px;
+    }
+
+
+    .navbar-right {
+        gap: 10px;
+    }
+
+
+    .datetime {
+        display: none;
+    }
+
+
+    .profile-box {
+        padding: 6px 10px;
+    }
+
+
+    .profile-box i {
+        font-size: 32px;
+    }
+
+
+    /* ==============================
+       PAGE CONTENT
+    ============================== */
+
+    .page-content {
+        padding: 20px 15px;
+    }
+
+
+    /* ==============================
+       WELCOME
+    ============================== */
+
+    .welcome-section,
+    .welcome-banner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 25px 20px;
+    }
+
+
+    .welcome-left {
+
+        width: 100%;
+
+        align-items: center;
+    }
+
+
+    .welcome-right {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .banner-image {
+
+        width: 100%;
+
+        max-width: 400px;
+
+        height: 180px;
+    }
+
+
+    .welcome-left h2 {
+        font-size: 26px;
+    }
+
+
+    .welcome-left h5 {
+        font-size: 17px;
+    }
+
+
+    /* ==============================
+       DASHBOARD CARD
+    ============================== */
+
+    .dashboard-card {
+
+        height: 135px;
+
+        padding: 20px;
+    }
+
+
+    .dashboard-card h2 {
+        font-size: 34px;
+    }
+
+
+    .dashboard-card i {
+        font-size: 45px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .navbar-left h4 {
+        font-size: 18px;
+    }
+
+
+    .navbar-left span {
+        font-size: 12px;
+    }
+
+
+    .toggle-sidebar {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 20px;
+
+        margin-right: 10px;
+    }
+
+
+    .welcome-left {
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .school-logo {
+
+        width: 65px;
+
+        height: 65px;
+    }
+
+
+    .welcome-left h2 {
+        font-size: 22px;
+    }
+
+
+    .welcome-left h5 {
+        font-size: 15px;
+    }
+
+
+    .welcome-left p {
+        font-size: 13px;
+    }
+
+
+    .welcome-left small {
+        font-size: 11px;
+    }
+
+
+    .quick-menu {
+        height: 130px;
+    }
+
+
+    .quick-menu i {
+        font-size: 34px;
+    }
+
+
+    .dashboard-card {
+        height: 130px;
+    }
+
+
+    .dashboard-card h2 {
+        font-size: 30px;
+    }
+
+
+    .dashboard-card i {
+        font-size: 40px;
+    }
+
+}

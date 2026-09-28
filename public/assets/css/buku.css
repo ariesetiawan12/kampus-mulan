@@ -1,0 +1,321 @@
+/* ===========================================
+        PAGE HEADER
+=========================================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    padding:25px 30px;
+
+    background:linear-gradient(135deg,#173B6C,#2F6EB8);
+
+    border-radius:18px;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.page-header h2{
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.page-header p{
+
+    margin-top:8px;
+
+    opacity:.9;
+
+}
+
+/* ===========================================
+        BUTTON
+=========================================== */
+
+.btn-primary{
+
+    background:#173B6C;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#2F6EB8;
+
+}
+
+/* ===========================================
+        CARD
+=========================================== */
+
+.dashboard-card{
+
+    border-radius:18px;
+
+    padding:25px;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.dashboard-card h2{
+
+    font-size:38px;
+
+    font-weight:bold;
+
+}
+
+.dashboard-card h6{
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card i{
+
+    font-size:48px;
+
+    opacity:.8;
+
+}
+
+/* ===========================================
+        TABLE
+=========================================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#173B6C;
+
+    color:#fff;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    padding:15px;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f4f8ff;
+
+}
+
+/* ===========================================
+        COVER
+=========================================== */
+
+.cover-table{
+
+    width:60px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    border:2px solid #eee;
+
+}
+
+.cover-icon{
+
+    font-size:45px;
+
+    color:#173B6C;
+
+}
+
+/* ===========================================
+        BADGE
+=========================================== */
+
+.badge{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+}
+
+/* ===========================================
+        SEARCH
+=========================================== */
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+.input-group input{
+
+    border-radius:10px 0 0 10px;
+
+}
+
+.input-group button{
+
+    border-radius:0;
+
+}
+
+.input-group a{
+
+    border-radius:0 10px 10px 0;
+
+}
+
+/* ===========================================
+        MODAL
+=========================================== */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:18px;
+
+}
+
+.modal-header{
+
+    background:#173B6C;
+
+    color:#fff;
+
+}
+
+.modal-body label{
+
+    font-weight:600;
+
+}
+
+.modal-footer{
+
+    border:none;
+
+}
+
+/* ===========================================
+        PREVIEW COVER
+=========================================== */
+
+#preview{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:3px solid #e9ecef;
+
+}
+
+/* ===========================================
+        PAGINATION
+=========================================== */
+
+.pagination{
+
+    justify-content:center;
+
+}
+
+.page-link{
+
+    color:#173B6C;
+
+}
+
+.page-item.active .page-link{
+
+    background:#173B6C;
+
+    border-color:#173B6C;
+
+}
+
+/* ===========================================
+        RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+.page-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.dashboard-card{
+
+    margin-bottom:15px;
+
+}
+
+}

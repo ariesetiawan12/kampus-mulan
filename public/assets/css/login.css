@@ -1,0 +1,878 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('../img/books.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    height: 100vh;
+
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =====================================================
+   OVERLAY BACKGROUND
+===================================================== */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(23, 59, 108, .78);
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   LEFT PANEL / BRANDING
+===================================================== */
+
+.left-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.branding {
+    max-width: 500px;
+
+    animation: fadeLeft .8s ease;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    width: 150px;
+
+    border-radius: 50%;
+
+    background: white;
+    padding: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+
+    animation: float 3s infinite ease-in-out;
+}
+
+
+/* =====================================================
+   BRANDING TEXT
+===================================================== */
+
+.branding h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.branding h4 {
+    margin-top: 10px;
+
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.branding p {
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    opacity: .9;
+
+    line-height: 35px;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.login-card {
+    width: 430px;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, .95);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+
+    border: 1px solid rgba(255, 255, 255, .3);
+
+    animation: fadeRight .8s ease;
+}
+
+
+/* =====================================================
+   LOGIN TITLE
+===================================================== */
+
+.login-card h3 {
+    text-align: center;
+
+    color: #173B6C;
+
+    font-weight: 700;
+}
+
+.login-card p {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.login-card label {
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    box-shadow: none;
+
+    border-color: #173B6C;
+}
+
+
+/* =====================================================
+   INPUT GROUP
+===================================================== */
+
+.input-group-text {
+    background: #173B6C;
+
+    color: white;
+
+    border: none;
+
+    min-width: 45px;
+
+    justify-content: center;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+.password-group {
+    position: relative;
+}
+
+.password-group button {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: none;
+
+    border: none;
+
+    font-size: 20px;
+
+    color: #666;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+.password-group button:hover {
+    color: #173B6C;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.btn-login {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #173B6C;
+
+    color: white;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    transition: all .3s ease;
+
+    box-shadow: 0 6px 15px rgba(23, 59, 108, .18);
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+
+    background: #0d2c52;
+
+    box-shadow: 0 8px 20px rgba(23, 59, 108, .25);
+}
+
+.btn-login:active {
+    transform: scale(.98);
+}
+
+
+/* =====================================================
+   DATE & TIME
+===================================================== */
+
+.datetime {
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #173B6C;
+
+    font-weight: 600;
+}
+
+#tanggal {
+    margin-bottom: 8px;
+}
+
+#jam {
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.login-footer {
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ANIMATION - FLOAT
+===================================================== */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   ANIMATION - FADE LEFT
+===================================================== */
+
+@keyframes fadeLeft {
+
+    from {
+        opacity: 0;
+
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
+   ANIMATION - FADE RIGHT
+===================================================== */
+
+@keyframes fadeRight {
+
+    from {
+        opacity: 0;
+
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    body {
+        min-height: 100vh;
+
+        height: auto;
+
+        overflow-y: auto;
+
+        background-position: center;
+
+        background-size: cover;
+    }
+
+
+    /* Background lebih elegan di HP */
+
+    .overlay {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(23, 59, 108, .90),
+                rgba(13, 44, 82, .82)
+            );
+    }
+
+
+    /* Container */
+
+    .container-fluid {
+        min-height: 100vh;
+
+        padding: 20px;
+    }
+
+
+    /* Sembunyikan panel kiri */
+
+    .left-panel {
+        display: none;
+    }
+
+
+    /* Panel kanan */
+
+    .right-panel {
+        min-height: 100vh;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 15px 0;
+    }
+
+
+    /* =================================================
+       LOGIN CARD MOBILE
+    ================================================= */
+
+    .login-card {
+
+        width: 100%;
+
+        max-width: 400px;
+
+        padding: 32px 25px 25px;
+
+        border-radius: 24px;
+
+        background: rgba(255, 255, 255, .97);
+
+        backdrop-filter: blur(15px);
+
+        box-shadow:
+            0 20px 50px rgba(0, 0, 0, .30);
+
+        animation: fadeRight .7s ease;
+    }
+
+
+    /* Title */
+
+    .login-card h3 {
+
+        font-size: 25px;
+
+        margin-bottom: 8px;
+
+        letter-spacing: .5px;
+    }
+
+
+    /* Subtitle */
+
+    .login-card p {
+
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* Label */
+
+    .login-card label {
+
+        font-size: 14px;
+
+        font-weight: 500;
+
+        color: #333;
+
+        margin-bottom: 7px;
+    }
+
+
+    /* Input */
+
+    .input-group {
+
+        margin-bottom: 18px;
+    }
+
+    .input-group-text {
+
+        min-width: 45px;
+
+        height: 48px;
+
+        justify-content: center;
+
+        background: #173B6C;
+
+        color: white;
+
+        border: none;
+
+        border-radius: 10px 0 0 10px;
+    }
+
+    .input-group .form-control {
+
+        height: 48px;
+
+        border-left: none;
+
+        font-size: 14px;
+
+        border-radius: 0 10px 10px 0;
+    }
+
+
+    /* Input focus */
+
+    .form-control:focus {
+
+        box-shadow:
+            0 0 0 3px rgba(23, 59, 108, .10);
+
+        border-color: #173B6C;
+    }
+
+
+    /* Password */
+
+    .password-group button {
+
+        right: 8px;
+
+        width: 40px;
+
+        height: 40px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-radius: 8px;
+
+        font-size: 17px;
+    }
+
+    .password-group button:hover {
+
+        background: #f1f3f5;
+    }
+
+
+    /* Login button */
+
+    .btn-login {
+
+        height: 50px;
+
+        margin-top: 5px;
+
+        border-radius: 11px;
+
+        font-size: 14px;
+
+        letter-spacing: .5px;
+
+        box-shadow:
+            0 6px 15px rgba(23, 59, 108, .20);
+    }
+
+
+    /* Date time */
+
+    .datetime {
+
+        margin-top: 24px;
+
+        padding-top: 18px;
+
+        border-top: 1px solid #ddd;
+    }
+
+
+    #tanggal {
+
+        margin-bottom: 5px;
+
+        font-size: 13px;
+
+        font-weight: 500;
+    }
+
+
+    #jam {
+
+        font-size: 21px;
+
+        font-weight: 700;
+    }
+
+
+    /* Footer */
+
+    .login-footer {
+
+        margin-top: 18px;
+
+        padding-top: 15px;
+
+        border-top: 1px solid #eee;
+
+        text-align: center;
+
+        color: #888;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE HP
+===================================================== */
+
+@media (max-width: 576px) {
+
+    body {
+
+        background-position: center;
+
+        background-size: cover;
+
+        overflow-y: auto;
+    }
+
+
+    .container-fluid {
+
+        padding: 15px;
+    }
+
+
+    .right-panel {
+
+        min-height: 100vh;
+
+        padding: 8px 0;
+    }
+
+
+    /* Card */
+
+    .login-card {
+
+        width: 100%;
+
+        max-width: 380px;
+
+        padding: 28px 21px 22px;
+
+        border-radius: 22px;
+    }
+
+
+    /* Title */
+
+    .login-card h3 {
+
+        font-size: 23px;
+    }
+
+
+    .login-card p {
+
+        font-size: 13px;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* Label */
+
+    .login-card label {
+
+        font-size: 13px;
+    }
+
+
+    /* Input */
+
+    .input-group {
+
+        margin-bottom: 16px;
+    }
+
+
+    .input-group-text {
+
+        min-width: 43px;
+
+        height: 46px;
+    }
+
+
+    .input-group .form-control {
+
+        height: 46px;
+
+        font-size: 13px;
+    }
+
+
+    /* Button */
+
+    .btn-login {
+
+        height: 48px;
+
+        font-size: 13px;
+
+        border-radius: 10px;
+    }
+
+
+    /* Date */
+
+    .datetime {
+
+        margin-top: 20px;
+
+        padding-top: 15px;
+    }
+
+
+    #tanggal {
+
+        font-size: 12px;
+    }
+
+
+    #jam {
+
+        font-size: 19px;
+    }
+
+
+    /* Footer */
+
+    .login-footer {
+
+        margin-top: 15px;
+
+        padding-top: 13px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   HP KECIL SEKALI
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .container-fluid {
+
+        padding: 10px;
+    }
+
+
+    .right-panel {
+
+        padding: 5px 0;
+    }
+
+
+    .login-card {
+
+        padding: 24px 17px 19px;
+
+        border-radius: 19px;
+    }
+
+
+    .login-card h3 {
+
+        font-size: 21px;
+    }
+
+
+    .login-card p {
+
+        font-size: 12px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .input-group-text {
+
+        min-width: 40px;
+    }
+
+
+    .input-group .form-control {
+
+        font-size: 12px;
+    }
+
+
+    .btn-login {
+
+        height: 46px;
+
+        font-size: 12px;
+    }
+
+
+    #tanggal {
+
+        font-size: 11px;
+    }
+
+
+    #jam {
+
+        font-size: 18px;
+    }
+
+
+    .login-footer {
+
+        font-size: 9px;
+    }
+
+}

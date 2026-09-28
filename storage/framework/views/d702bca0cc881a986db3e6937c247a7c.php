@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\LENOVO\Herd\kampus_mulan\resources\views/layouts/footer.blade.php ENDPATH**/ ?>

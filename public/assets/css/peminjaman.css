@@ -1,0 +1,660 @@
+/* =========================================================
+   PEMINJAMAN
+========================================================= */
+
+.peminjaman-card {
+    border-radius: 16px;
+}
+
+.section-title {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SEARCH UMUM
+========================================================= */
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #6c757d;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+
+    padding-left: 40px;
+
+    border-radius: 8px;
+}
+
+.search-input:focus {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+
+/* =========================================================
+   ANGGOTA SEARCH
+========================================================= */
+
+.anggota-search-wrapper {
+    position: relative;
+}
+
+
+/* =========================================================
+   DROPDOWN ANGGOTA
+========================================================= */
+
+.anggota-dropdown {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    background: #ffffff;
+
+    border: 1px solid #dee2e6;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
+
+    max-height: 280px;
+
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   ITEM ANGGOTA
+========================================================= */
+
+.anggota-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 0;
+
+    border-bottom: 1px solid #f0f0f0;
+
+    background: #ffffff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease;
+}
+
+.anggota-option:last-child {
+    border-bottom: none;
+}
+
+.anggota-option:hover {
+    background: #f4f8ff;
+}
+
+
+/* =========================================================
+   ICON ANGGOTA
+========================================================= */
+
+.anggota-option-icon {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e7f1ff;
+
+    color: #0d6efd;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   DETAIL ANGGOTA
+========================================================= */
+
+.anggota-option-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.anggota-option-name {
+    display: block;
+
+    color: #212529;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 2px;
+}
+
+.anggota-option-detail {
+    display: block;
+
+    color: #6c757d;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ANGGOTA TERPILIH
+========================================================= */
+
+.anggota-selected {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #198754;
+
+    border-radius: 9px;
+
+    background: #f0fff6;
+}
+
+.anggota-selected-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d1e7dd;
+
+    color: #198754;
+}
+
+.anggota-selected-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.anggota-selected-content strong {
+    display: block;
+
+    color: #146c43;
+
+    font-size: 14px;
+}
+
+.anggota-selected-content small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #6c757d;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO SEARCH ANGGOTA
+========================================================= */
+
+.search-info {
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    color: #6c757d;
+}
+
+
+/* =========================================================
+   EMPTY ANGGOTA
+========================================================= */
+
+.anggota-empty {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 7px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #f1d48a;
+
+    border-radius: 8px;
+
+    background: #fff9e6;
+
+    color: #856404;
+}
+
+.anggota-empty i {
+    font-size: 17px;
+}
+
+.anggota-empty strong {
+    font-size: 13px;
+}
+
+.anggota-empty small {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SELECT ANGGOTA - TIDAK DIGUNAKAN LAGI
+========================================================= */
+
+#anggota_id {
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   TOOLBAR BUKU
+========================================================= */
+
+.book-toolbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.selected-book-info {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #198754;
+}
+
+.selected-book-info i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   LIST BUKU
+========================================================= */
+
+.book-list {
+    max-height: 360px;
+
+    overflow-y: auto;
+
+    border: 1px solid #dee2e6;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    padding: 8px;
+}
+
+
+/* =========================================================
+   ITEM BUKU
+========================================================= */
+
+.book-item {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 14px;
+
+    margin-bottom: 6px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: #fff;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.book-item:last-child {
+    margin-bottom: 0;
+}
+
+.book-item:hover {
+    background: #f8f9fa;
+
+    border-color: #adb5bd;
+}
+
+
+/* =========================================================
+   BUKU TERPILIH
+========================================================= */
+
+.book-item.selected {
+    background: #f0fff6;
+
+    border-color: #198754;
+
+    box-shadow:
+        0 2px 6px rgba(25, 135, 84, 0.08);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.book-checkbox {
+    flex-shrink: 0;
+}
+
+.buku-checkbox-input {
+    width: 19px;
+
+    height: 19px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   CONTENT BUKU
+========================================================= */
+
+.book-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.book-title {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    color: #212529;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.book-code {
+    display: inline-block;
+
+    padding: 3px 7px;
+
+    border-radius: 5px;
+
+    background: #e9ecef;
+
+    color: #495057;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.book-item.selected .book-code {
+    background: #d1e7dd;
+
+    color: #0f5132;
+}
+
+.book-stock {
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #6c757d;
+}
+
+
+/* =========================================================
+   CHECK ICON BUKU
+========================================================= */
+
+.book-check-icon {
+    opacity: 0;
+
+    color: #198754;
+
+    font-size: 19px;
+
+    transition: opacity 0.2s ease;
+}
+
+.book-item.selected .book-check-icon {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   EMPTY BOOK
+========================================================= */
+
+.empty-book {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    color: #6c757d;
+}
+
+.empty-book i {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 38px;
+}
+
+.empty-book h6 {
+    margin-bottom: 5px;
+
+    font-weight: 600;
+}
+
+.empty-book p {
+    margin-bottom: 0;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   ERROR BUKU
+========================================================= */
+
+.book-list.buku-error {
+    border-color: #dc3545;
+
+    box-shadow:
+        0 0 0 0.15rem rgba(220, 53, 69, 0.1);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+#btnResetBuku {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.book-list::-webkit-scrollbar,
+.anggota-dropdown::-webkit-scrollbar {
+    width: 7px;
+}
+
+.book-list::-webkit-scrollbar-track,
+.anggota-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+    border-radius: 10px;
+}
+
+.book-list::-webkit-scrollbar-thumb,
+.anggota-dropdown::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+
+    border-radius: 10px;
+}
+
+.book-list::-webkit-scrollbar-thumb:hover,
+.anggota-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #868e96;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .book-toolbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    #btnResetBuku {
+        width: 100%;
+    }
+
+    .book-list {
+        max-height: 320px;
+    }
+
+    .anggota-dropdown {
+        max-height: 240px;
+    }
+
+    .book-item {
+        padding: 11px;
+    }
+
+    .book-title {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .book-item {
+        gap: 9px;
+    }
+
+    .book-code {
+        font-size: 11px;
+    }
+
+    .book-stock {
+        font-size: 11px;
+    }
+
+    .selected-book-info {
+        font-size: 13px;
+    }
+
+    .anggota-option {
+        padding: 10px;
+    }
+
+    .anggota-option-icon {
+        width: 34px;
+
+        height: 34px;
+    }
+
+}

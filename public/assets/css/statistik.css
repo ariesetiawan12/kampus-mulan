@@ -1,0 +1,868 @@
+/* =========================================================
+   STATISTIK HEADER
+========================================================= */
+
+.statistik-header {
+    margin-bottom: 25px;
+}
+
+.statistik-header h2 {
+    margin: 0 0 5px;
+
+    color: #173B6C;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+.statistik-header h2 i {
+    margin-right: 8px;
+}
+
+.statistik-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   STATISTIK CARD
+========================================================= */
+
+.statistik-card {
+
+    position: relative;
+
+    min-height: 145px;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.statistik-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, .12);
+
+}
+
+
+.statistik-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+
+    height: 160px;
+
+    right: -60px;
+
+    top: -65px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, .09);
+
+}
+
+
+.statistik-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+
+    height: 80px;
+
+    right: 55px;
+
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, .06);
+
+}
+
+
+.statistik-card-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.statistik-card h6 {
+
+    margin: 0 0 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.statistik-card h2 {
+
+    margin: 0 0 5px;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+}
+
+
+.statistik-card small {
+
+    font-size: 13px;
+
+    opacity: .85;
+
+}
+
+
+.statistik-icon {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 52px;
+
+    opacity: .72;
+
+}
+
+
+
+/* =========================================================
+   WARNA CARD
+========================================================= */
+
+.statistik-primary {
+
+    background:
+        linear-gradient(
+            135deg,
+            #173B6C,
+            #2F6EB8
+        );
+
+}
+
+
+.statistik-success {
+
+    background:
+        linear-gradient(
+            135deg,
+            #198754,
+            #20a36a
+        );
+
+}
+
+
+.statistik-warning {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5a900,
+            #ffc107
+        );
+
+}
+
+
+.statistik-danger {
+
+    background:
+        linear-gradient(
+            135deg,
+            #dc3545,
+            #e04b5b
+        );
+
+}
+
+
+
+/* =========================================================
+   BOX
+========================================================= */
+
+.statistik-box {
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: none;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .07);
+
+}
+
+
+.statistik-box-header {
+
+    min-height: 62px;
+
+    padding:
+        17px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid #edf0f4;
+
+    color: #173B6C;
+
+    font-weight: 600;
+
+}
+
+
+.statistik-box-header > div {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.statistik-box-header i {
+
+    margin-right: 8px;
+
+}
+
+
+.statistik-box-body {
+
+    padding: 20px;
+
+}
+
+
+
+/* =========================================================
+   TAHUN
+========================================================= */
+
+.statistik-year {
+
+    padding:
+        5px 10px;
+
+    border-radius: 8px;
+
+    background: #eef4fb;
+
+    color: #173B6C;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+.statistik-link {
+
+    color: #2F6EB8;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: .2s;
+
+}
+
+
+.statistik-link:hover {
+
+    color: #173B6C;
+
+}
+
+
+.statistik-link i {
+
+    margin-left: 3px;
+
+    margin-right: 0;
+
+}
+
+
+
+/* =========================================================
+   CHART
+========================================================= */
+
+.chart-container {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 320px;
+
+}
+
+
+#chartPeminjaman {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+
+
+/* =========================================================
+   STATUS BUKU
+========================================================= */
+
+.status-book-wrapper {
+
+    min-height: 280px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+.status-book-chart {
+
+    width: 190px;
+
+    height: 190px;
+
+    flex-shrink: 0;
+
+}
+
+
+#chartStatusBuku {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+
+.status-book-list {
+
+    min-width: 145px;
+
+}
+
+
+.status-book-item {
+
+    padding: 11px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom:
+        1px solid #edf0f4;
+
+    font-size: 13px;
+
+}
+
+
+.status-book-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.status-book-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.status-dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+}
+
+
+.dot-tersedia {
+
+    background: #198754;
+
+}
+
+
+.dot-dipinjam {
+
+    background: #ffc107;
+
+}
+
+
+.dot-rusak {
+
+    background: #dc3545;
+
+}
+
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.statistik-list-item {
+
+    min-height: 60px;
+
+    padding: 12px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom:
+        1px solid #edf0f4;
+
+}
+
+
+.statistik-list-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.statistik-number {
+
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eef4fb;
+
+    color: #173B6C;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.statistik-list-content {
+
+    min-width: 0;
+
+    flex: 1;
+
+}
+
+
+.statistik-list-content strong {
+
+    display: block;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #222;
+
+    font-size: 14px;
+
+}
+
+
+.statistik-list-content small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #777;
+
+    font-size: 12px;
+
+}
+
+
+.statistik-list-content small span {
+
+    margin: 0 3px;
+
+}
+
+
+
+/* =========================================================
+   AKTIVITAS
+========================================================= */
+
+.activity-item {
+
+    min-height: 60px;
+
+    padding: 11px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom:
+        1px solid #edf0f4;
+
+}
+
+
+.activity-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.activity-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eef4fb;
+
+    color: #173B6C;
+
+    font-size: 17px;
+
+}
+
+
+.activity-content {
+
+    min-width: 0;
+
+    flex: 1;
+
+}
+
+
+.activity-content strong {
+
+    display: block;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #222;
+
+    font-size: 14px;
+
+}
+
+
+.activity-content small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #777;
+
+    font-size: 12px;
+
+}
+
+
+.activity-content small span {
+
+    margin:
+        0 3px;
+
+}
+
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.statistik-empty {
+
+    min-height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #999;
+
+    font-size: 14px;
+
+}
+
+
+.statistik-empty i {
+
+    font-size: 38px;
+
+    color: #cbd5e1;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .status-book-wrapper {
+
+        gap: 15px;
+
+    }
+
+    .status-book-chart {
+
+        width: 160px;
+
+        height: 160px;
+
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .status-book-wrapper {
+
+        min-height: 260px;
+
+        flex-direction: row;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .statistik-header h2 {
+
+        font-size: 25px;
+
+    }
+
+    .statistik-card {
+
+        min-height: 135px;
+
+    }
+
+    .statistik-card h2 {
+
+        font-size: 34px;
+
+    }
+
+    .statistik-icon {
+
+        font-size: 44px;
+
+    }
+
+    .status-book-wrapper {
+
+        flex-direction: column;
+
+    }
+
+    .status-book-list {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .statistik-card {
+
+        padding: 20px;
+
+    }
+
+    .statistik-box-header {
+
+        padding:
+            15px;
+
+    }
+
+    .statistik-box-body {
+
+        padding:
+            15px;
+
+    }
+
+    .chart-container {
+
+        height: 260px;
+
+    }
+
+    .statistik-list-item,
+
+    .activity-item {
+
+        gap: 8px;
+
+    }
+
+}
