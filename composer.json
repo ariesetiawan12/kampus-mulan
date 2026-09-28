@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "The skeleton application for Laravel.",
     "keywords": [
         "laravel",
         "framework"
@@ -11,6 +11,7 @@
     "require": {
         "php": "^8.3",
         "ext-gd": "*",
+        "ext-zip": "*",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0",
         "maatwebsite/excel": "^3.1"
